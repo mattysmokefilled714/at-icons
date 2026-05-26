@@ -25,7 +25,7 @@ Download the [latest release](https://github.com/voxybuns/at-icons/releases/late
 To apply an icon to a node or class, add the [`@icon` annotation](https://docs.godotengine.org/en/stable/classes/class_@gdscript.html#class-gdscript-annotation-icon) to your node's script followed by the path to the desired icon in parentheses and quotes **before** the class declaration, like so:
 
 ```gdscript
-@icon (":res//addons/at-icons/node/bunny.svg")
+@icon ("res://addons/at-icons/node/bunny.svg")
 class_name MyNode
 extends Node
 ```
